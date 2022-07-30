@@ -17,7 +17,7 @@ pipeline {
 
         stage("test") {
             steps {
-                echo "Hellow From! testing phase for maven
+                echo "Hellow From! testing phase for maven"
             }
         }
     }
