@@ -1,9 +1,6 @@
 pipeline {
     agent any
     
-    tools {
-        maven 'maven-3.6.3'
-    }
     environment {
         PATH = "/usr/bin:$PATH"
     }
@@ -11,6 +8,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
+                echo "Hello! From Build Phase"
                 sh "mvn clean install"
             }
         }
